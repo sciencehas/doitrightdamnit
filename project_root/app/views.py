@@ -1,4 +1,3 @@
-```python
 from django.shortcuts import render, redirect
 from .forms import UploadForm
 from .models import Document
@@ -29,4 +28,3 @@ def analyze(request, document_id):
     document = Document.objects.get(id=document_id)
     similarity_results = analyze_similarity(document)
     return render(request, 'app/detail.html', {'results': similarity_results})
-```
