@@ -1,4 +1,3 @@
-```python
 import os
 from django.core.files.storage import default_storage
 from django.core.files.base import ContentFile
@@ -20,4 +19,3 @@ def delete_file(path):
         os.remove(path)
     else:
         raise ValueError("File not found in the specified path.")
-```
