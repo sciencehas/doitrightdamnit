@@ -1,0 +1,21 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document Similarity Analyzer</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'app/css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Document Similarity Analyzer</h1>
+        <p>Upload your documents to analyze their similarity.</p>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+    <script src="{% static 'app/js/main.js' %}"></script>
+</body>
+</html>
+```
