@@ -1,4 +1,3 @@
-```python
 from sklearn.metrics.pairwise import cosine_similarity
 from .vectorizer import Vectorizer
 from .document_processor import DocumentProcessor
@@ -33,4 +32,3 @@ class SimilarityAnalyzer:
             similar_sentences = self.doc_processor.get_similar_sentences(documents[doc1], documents[doc2])
             similar_content.append((documents[doc1], documents[doc2], similar_sentences))
         return similar_content
-```
