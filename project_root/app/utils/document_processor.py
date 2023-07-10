@@ -1,4 +1,3 @@
-```python
 import os
 import re
 import nltk
@@ -44,4 +43,3 @@ def clean_data(data):
     data = remove_stop_words(data)
 
     return data
-```
