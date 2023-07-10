@@ -1,4 +1,3 @@
-```python
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 
@@ -25,4 +24,3 @@ class Vectorizer:
 
     def inverse_transform(self, bag):
         return self.count_vectorizer.inverse_transform(bag)
-```
