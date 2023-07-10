@@ -1,4 +1,3 @@
-```python
 import re
 import nltk
 from nltk.corpus import stopwords
@@ -22,4 +21,3 @@ class Cleaner:
         filtered_text = [word for word in word_tokens if word not in self.stop_words]
 
         return ' '.join(filtered_text)
-```
