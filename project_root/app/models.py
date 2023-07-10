@@ -1,4 +1,3 @@
-```python
 from django.db import models
 from django.contrib.auth.models import User
 
@@ -16,4 +15,3 @@ class Similarity(models.Model):
     content1 = models.ForeignKey(Content, related_name='content1', on_delete=models.CASCADE)
     content2 = models.ForeignKey(Content, related_name='content2', on_delete=models.CASCADE)
     similarity = models.FloatField()
-```
